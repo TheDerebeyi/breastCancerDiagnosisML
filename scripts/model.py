@@ -85,10 +85,11 @@ class ModelEvaluation:
     @staticmethod
     def confusion_matrix(y_true, y_pred):
         cm = confusion_matrix(y_true, y_pred)
-        ax = sns.heatmap(cm, annot=True, fmt='g', cmap='Reds', annot_kws={"size": 16})
+        ax = sns.heatmap(cm, annot=True, fmt='g', cmap='rocket', annot_kws={"size": 16})
 
+        ax.set_title('Confusion Matrix')
         ax.set_xlabel('y_pred')
         ax.set_ylabel('y_true')
-        ax.legend()
+        ax.legend([],[], frameon=False)
 
         return ax
