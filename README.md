@@ -1,21 +1,21 @@
-Requirements
+###Requirements
   streamlit
   pandas
   seaborn
   matplotlib
   scikit-learn
 
-How to run?
+###How to run?
   Run 'streamlit run main.py' in project directory
 
-data_preprocessing.py:
+###data_preprocessing.py:
   This module has only one class. This class have those following methods:
     col_cleanup: cleans irrevelant columns
     encoder: encodes target column
     plot: returns a correlation matrix
     split_test_train: split dataframe into test and train data
 
-model.py:
+###model.py:
   This module has two classes. Model and it's child classes and ModelEvaluation.
   Model class is a abstract class and should be use for a guide to create child classes.
   Each model class have train and predict methods.
